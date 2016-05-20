@@ -1,0 +1,69 @@
+	body {
+		background: #000 url(images/background-2.jpg) left top repeat;
+		color: #fff;
+		font-family: Futura, Trebuchet MS, Arial, sans-serif;
+		margin: 0;
+		overflow: hidden;
+	}
+	.page-wrapper {
+/* 			display: table; */
+		margin: 0 auto;
+	}
+	.content-container {
+/* 			display: table-cell;
+		position: absolute;
+		vertical-align: middle; */
+	}
+	.scene {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+	}
+	.scene.game-over {
+		color: #F00;
+	}
+	.scene.win-level {
+		color: #090;
+	}
+	.scene.credits {
+		color: #FFF;
+	}
+	.scene-title {
+		font-size: 100px;
+		margin-bottom: .5em;
+	}
+	.sub-title {
+		font-size: 30px;
+		margin-top: 1.5em;
+	}
+	.controls {
+		margin: 0 auto;
+		overflow: auto;
+	}
+	.controls .control-key,
+	.controls .control-function {
+		display: inline-block;
+		width: 49%;
+	}
+	.controls .control-key {
+		color: #FF7;
+		padding-right: 10px;
+		text-align: right;
+	}
+	.controls .control-function {
+		margin: 0;
+		text-align: left;
+	}
+	.blink {
+		text-decoration: blink;
+		animation: blink 1s linear infinite;
+	}
+
+	@keyframes blink {
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}

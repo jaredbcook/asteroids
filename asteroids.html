@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asteroids by Jared Cook</title>
+	<link rel="stylesheet" type="text/css" href="asteroids.css">
+</head>
+<body>
+	<div class="page-wrapper">
+		<canvas id="gameCanvas" class="game-canvas">Your browser does not support the canvas element.</canvas>
+
+		<div class="content-container">
+			<div id="titleScreenScene" class="title-screen scene" style="display:none;">
+				<h1 class="scene-title">Asteroids</h1>
+
+				<h2 class="sub-title">Instructions:</h2>
+				<p>Shoot all the asteroids and avoid crashing!</p>
+
+				<h2 class="sub-title">Controls:</h2>
+				<dl class="controls">
+					<dt class="control-key">Left</dt>
+					<dd class="control-function">Rotate Ship Left</dd>
+					<dt class="control-key">Right</dt>
+					<dd class="control-function">Rotate Ship Right</dd>
+					<dt class="control-key">Up</dt>
+					<dd class="control-function">Accelerate</dd>
+					<dt class="control-key">Space</dt>
+					<dd class="control-function">Fire</dd>
+					<dt class="control-key">F</dt>
+					<dd class="control-function">Toggle Full-Screen</dd>
+		<!-- 			<dt class="control-key">P</dt>
+					<dd class="control-function">Pause</dd> -->
+				</dl>
+
+				<h2 class="sub-title blink">Press Enter to Start</h2>
+			</div>
+
+			<div id="levelReadyScene" class="win-level scene" style="display:none;">
+				<h1 class="scene-title">Level 1</h1>
+				<h2 class="sub-title blink">Press Enter</h2>
+			</div>
+
+			<div id="gameOverScene" class="game-over scene" style="display:none;">
+				<h1 class="scene-title">You are dead.</h1>
+				<h2 class="sub-title blink">Press Enter</h2>
+			</div>
+
+			<div id="creditsScene" class="credits scene" style="display:none;">
+				<h1 class="scene-title">Written by Jared Cook</h1>
+				<h2 class="sub-title blink">Press Enter</h2>
+			</div>
+
+		</div><!-- end: .content-container -->
+
+	</div><!-- end: .page-wrapper -->
+
+	<script src="asteroids.js"></script>
+</body>
+</html>
